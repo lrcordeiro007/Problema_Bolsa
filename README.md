@@ -30,4 +30,14 @@ Quando desejar parar só usar o :
 ```bash
 docker compose down
 ```
+E por último fiz o deploy do modelo no GCP, sendo possível ter acesso direto pelo link: 
+```bash
+https://nlp-service-8000-435538890189.us-central1.run.app/docs
+```
+
+Aqui esta a URL da imagem do contêiner:
+```bash
+us-central1-docker.pkg.dev/problema-bolsa/nlp-repo/nlp-app:v3
+```
+
 
