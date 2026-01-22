@@ -6,10 +6,8 @@ import os
 
 app = FastAPI(title="Mini Text Service", version="1.0.0")
 
-# Caminho para o modelo
 MODEL_PATH = "modelos/modelo_v1.joblib"
 
-# Carregar o modelo se ele existir
 if os.path.exists(MODEL_PATH):
     modelo = joblib.load(MODEL_PATH)
 else:

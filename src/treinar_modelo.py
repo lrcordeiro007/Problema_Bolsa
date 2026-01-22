@@ -17,10 +17,8 @@ def treinar():
     print("Treinando modelo...")
     pipeline.fit(X, y)
 
-    # Garante que a pasta modelos existe
     os.makedirs('modelos', exist_ok=True)
     
-    # Salva o modelo
     joblib.dump(pipeline, "modelos/modelo_v1.joblib")
     print("Modelo salvo em modelos/modelo_v1.joblib")
 
