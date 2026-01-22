@@ -22,3 +22,12 @@ http://localhost:8000/docs
 ```
 Após isso, dentro já da API, é possível escrever frases e testar o modelo ver se ele está classificando de forma correta.
 
+Outra opção é o uso do docker compose
+```bash
+docker compose up --build -d
+```
+Quando desejar parar só usar o :
+```bash
+docker compose down
+```
+
