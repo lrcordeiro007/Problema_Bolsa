@@ -4,7 +4,7 @@ import joblib
 import time
 import os
 
-app = FastAPI(title="Mini Text Service", version="1.0.0")
+app = FastAPI(title="API de classificação de texto", version="1.0.0")
 
 MODEL_PATH = "modelos/modelo_v1.joblib"
 
