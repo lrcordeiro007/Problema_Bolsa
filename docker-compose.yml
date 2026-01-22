@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  nlp-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: nlp_service_container
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./modelos:/app/modelos
+    environment:
+      - PYTHONUNBUFFERED=1
+      - ENV=production
+    restart: always
